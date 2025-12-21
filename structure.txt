@@ -1,0 +1,35 @@
+AIPECT-LMS-Full-Project/
+├── backend/          // پہلے والا Node.js (Firebase add کریں)
+├── frontend/         // پہلے والا React Web
+└── mobile/           // نیا Flutter App (یہ copy کریں)
+    ├── android/      // Android build
+    ├── ios/          // iOS build
+    ├── lib/
+    │   ├── main.dart
+    │   ├── screens/
+    │   │   ├── login_screen.dart
+    │   │   ├── attendance_scanner.dart  // QR/Fingerprint/Facial
+    │   │   ├── parents_portal.dart     // Dashboard/Charts/Fees
+    │   │   ├── lms_courses.dart
+    │   │   ├── career_portal.dart
+    │   │   ├── exam_portal.dart
+    │   │   └── admin_panel.dart
+    │   ├── services/
+    │   │   ├── api_service.dart        // Node/Firestore calls
+    │   │   ├── biometric_service.dart
+    │   │   └── firebase_service.dart
+    │   └── widgets/                     // Charts, Badges
+    ├── pubspec.yaml
+    ├── firebase_options.dart            // Firebase config
+    └── README.md
+
+git clone https://github.com/<your-username>/interactive_cares_lms.git
+cd interactive_cares_lms
+
+
+git init
+git add .
+git commit -m "AIPECT LMS Full (Web+Mobile) v1.0 - Attendance/Biometric/Fees/LMS/Parents"
+git branch -M main
+git remote add origin https://github.com/kirsacomsys-commits/AIPECT-LMS-Full.git
+git push -u origin main
